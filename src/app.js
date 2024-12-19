@@ -1,40 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "./App.module.css";
+import TimeConverter from "./components/TimeConverter/TimeConverter.js";
 
-class Title extends React.Component {
-  render() {
-    return (<h1 className="">{this.props.label}</h1>)
-  }
+function App() {
+  return (
+    <div className="app">
+      <header className="header">
+        <h1>Конвертер величин</h1>
+        <p>Перетворюйте відстані, об'єми та інше легко і швидко!</p>
+      </header>
+      <main className="main">
+        <TimeConverter />
+      </main>
+      <footer className="footer">
+        <p>&copy; 2024 MarkAlexI</p>
+      </footer>
+    </div>
+  );
 }
-
-class Paragraph extends React.Component {
-  render() {
-    return (
-      <p className="">
-      {this.props.text}
-      </p>
-    )
-  }
-}
-
-class Main extends React.Component {
-  constructor (props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return  (
-      <div className="">
-        <Title label={this.props.title} />
-          <Paragraph text={this.props.text} />
-      </div>
-    )
-  }
-}
-
 
 ReactDOM.render(
-  <Main title="React" text="Caution: do not look into laser with remaining eye."></Main>,
+  <App></App>,
   document.getElementById('react-app')
 );
