@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./TimeConverter.module.css";
+import "../../styles/converter.css";
 
 function TimeConverter() {
   const [input, setInput] = useState("");

@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "./App.module.css";
+import "./styles/app.css";
 import TimeConverter from "./components/TimeConverter/TimeConverter.js";
+import VolumeConverter from "./components/VolumeConverter/VolumeConverter.js";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       </header>
       <main className="main">
         <TimeConverter />
+        <VolumeConverter />
       </main>
       <footer className="footer">
         <p>&copy; 2024 MarkAlexI</p>
