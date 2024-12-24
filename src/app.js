@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import "./styles/app.css";
 import TimeConverter from "./components/TimeConverter/TimeConverter.js";
 import VolumeConverter from "./components/VolumeConverter/VolumeConverter.js";
+import TemperatureConverter from './components/TemperatureConverter/TemperatureConverter.js';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <main className="main">
         <TimeConverter />
         <VolumeConverter />
+        <TemperatureConverter />
       </main>
       <footer className="footer">
         <p>&copy; 2024 MarkAlexI</p>
