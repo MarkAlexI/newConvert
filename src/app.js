@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "./styles/app.css";
-import TimeConverter from "./components/TimeConverter/TimeConverter.js";
-import VolumeConverter from "./components/VolumeConverter/VolumeConverter.js";
+import TimeConverter from './components/TimeConverter/TimeConverter.js';
+import VolumeConverter from './components/VolumeConverter/VolumeConverter.js';
 import TemperatureConverter from './components/TemperatureConverter/TemperatureConverter.js';
+import AngleConverter from './components/AngleConverter/AngleConverter.js';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <TimeConverter />
         <VolumeConverter />
         <TemperatureConverter />
+        <AngleConverter />
       </main>
       <footer className="footer">
         <p>&copy; 2024 MarkAlexI</p>
