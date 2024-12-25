@@ -4,7 +4,7 @@ import "../../styles/converter.css";
 function TimeConverter() {
   const [input, setInput] = useState("");
   const [fromUnit, setFromUnit] = useState("hours");
-  const [toUnit, setToUnit] = useState("hours");
+  const [toUnit, setToUnit] = useState("minutes");
   const [result, setResult] = useState("");
 
   const conversionToMilliseconds = {
@@ -48,7 +48,7 @@ function TimeConverter() {
   };
 
   return (
-    <section className="timeConverter">
+    <section className="converter-wrapper">
       <h2 className="heading">Конвертер часу</h2>
       <div className="converter">
         <input

@@ -4,7 +4,7 @@ import "../../styles/converter.css";
 const VolumeConverter = () => {
   const [input, setInput] = useState("");
   const [fromUnit, setFromUnit] = useState("liters");
-  const [toUnit, setToUnit] = useState("liters");
+  const [toUnit, setToUnit] = useState("gallons");
   const [result, setResult] = useState("");
 
   const conversionToLiters = {
@@ -57,7 +57,7 @@ const VolumeConverter = () => {
   };
 
   return (
-    <section id="volume-converter">
+    <section className="converter-wrapper">
       <h2 className="heading">Конвертер об'ємів</h2>
       <div className="converter">
         <input

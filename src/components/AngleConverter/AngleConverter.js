@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const AngleConverter = () => {
   const [input, setInput] = useState("");
   const [fromUnit, setFromUnit] = useState("degrees");
-  const [toUnit, setToUnit] = useState("degrees");
+  const [toUnit, setToUnit] = useState("radians");
   const [result, setResult] = useState("");
 
   const convertAngle = () => {
@@ -42,8 +42,8 @@ const AngleConverter = () => {
   };
 
   return (
-    <section id="angle-converter">
-      <h2>Конвертер кутових величин</h2>
+    <section className="converter-wrapper">
+      <h2 className="heading">Конвертер кутових величин</h2>
       <div className="converter">
         <input
           type="number"

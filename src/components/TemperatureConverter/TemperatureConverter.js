@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const TemperatureConverter = () => {
   const [input, setInput] = useState("");
   const [fromUnit, setFromUnit] = useState("celsius");
-  const [toUnit, setToUnit] = useState("celsius");
+  const [toUnit, setToUnit] = useState("fahrenheit");
   const [result, setResult] = useState("");
 
   const convertTemperature = () => {
@@ -19,17 +19,17 @@ const TemperatureConverter = () => {
     if (fromUnit === toUnit) {
       convertedValue = inputValue;
     } else if (fromUnit === "celsius" && toUnit === "fahrenheit") {
-      convertedValue = (inputValue * 9) / 5 + 32; // °C -> °F
+      convertedValue = (inputValue * 9) / 5 + 32;
     } else if (fromUnit === "celsius" && toUnit === "kelvin") {
-      convertedValue = inputValue + 273.15; // °C -> K
+      convertedValue = inputValue + 273.15;
     } else if (fromUnit === "fahrenheit" && toUnit === "celsius") {
-      convertedValue = ((inputValue - 32) * 5) / 9; // °F -> °C
+      convertedValue = ((inputValue - 32) * 5) / 9;
     } else if (fromUnit === "fahrenheit" && toUnit === "kelvin") {
-      convertedValue = ((inputValue - 32) * 5) / 9 + 273.15; // °F -> K
+      convertedValue = ((inputValue - 32) * 5) / 9 + 273.15;
     } else if (fromUnit === "kelvin" && toUnit === "celsius") {
-      convertedValue = inputValue - 273.15; // K -> °C
+      convertedValue = inputValue - 273.15;
     } else if (fromUnit === "kelvin" && toUnit === "fahrenheit") {
-      convertedValue = ((inputValue - 273.15) * 9) / 5 + 32; // K -> °F
+      convertedValue = ((inputValue - 273.15) * 9) / 5 + 32;
     }
 
     setResult(`Результат: ${convertedValue.toFixed(2)} ${getTemperatureUnitName(toUnit)}`);
@@ -45,7 +45,7 @@ const TemperatureConverter = () => {
   };
 
   return (
-    <section id="temperature-converter">
+    <section className="converter-wrapper">
       <h2 className="heading">Конвертер температури</h2>
       <div className="converter">
         <input
