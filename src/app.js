@@ -7,6 +7,7 @@ import TemperatureConverter from './components/TemperatureConverter/TemperatureC
 import AngleConverter from './components/AngleConverter/AngleConverter.js';
 import WeightConverter from './components/WeightConverter/WeightConverter.js';
 import SpeedConverter from './components/SpeedConverter/SpeedConverter.js';
+import AreaConverter from './components/AreaConverter/AreaConverter.js';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <AngleConverter />
         <WeightConverter />
         <SpeedConverter />
+        <AreaConverter />
       </main>
       <footer className="footer">
         <p>&copy; 2024 MarkAlexI</p>
