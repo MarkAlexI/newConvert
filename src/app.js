@@ -9,6 +9,7 @@ import WeightConverter from './components/WeightConverter/WeightConverter.js';
 import SpeedConverter from './components/SpeedConverter/SpeedConverter.js';
 import AreaConverter from './components/AreaConverter/AreaConverter.js';
 import EnergyConverter from './components/EnergyConverter/EnergyConverter.js';
+import DataConverter from './components/DataConverter/DataConverter.js';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <SpeedConverter />
         <AreaConverter />
         <EnergyConverter />
+        <DataConverter />
       </main>
       <footer className="footer">
         <p>&copy; 2024 MarkAlexI</p>
