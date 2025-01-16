@@ -45,7 +45,10 @@ const TemperatureConverter = () => {
   };
 
   return (
-    <section className="converter-wrapper">
+    <section
+      id="temperature-converter"
+      className="converter-wrapper"
+    >
       <h2 className="heading">Конвертер температури</h2>
       <div className="converter">
         <input

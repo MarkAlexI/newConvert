@@ -45,7 +45,10 @@ const SpeedConverter = () => {
   };
 
   return (
-    <section className="converter-wrapper">
+    <section
+      id="speed-converter"
+      className="converter-wrapper"
+    >
       <h2 className="heading">Конвертер швидкості</h2>
       <div className="converter">
         <input

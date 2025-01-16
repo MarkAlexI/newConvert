@@ -42,7 +42,10 @@ const AngleConverter = () => {
   };
 
   return (
-    <section className="converter-wrapper">
+    <section
+      id="angle-converter"
+      className="converter-wrapper"
+    >
       <h2 className="heading">Конвертер кутових величин</h2>
       <div className="converter">
         <input

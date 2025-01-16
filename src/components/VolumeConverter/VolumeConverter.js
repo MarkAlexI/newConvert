@@ -57,7 +57,10 @@ const VolumeConverter = () => {
   };
 
   return (
-    <section className="converter-wrapper">
+    <section
+      id="volume-converter"
+      className="converter-wrapper"
+    >
       <h2 className="heading">Конвертер об'ємів</h2>
       <div className="converter">
         <input

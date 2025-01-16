@@ -48,7 +48,10 @@ const WeightConverter = () => {
   };
 
   return (
-    <section className="converter-wrapper">
+    <section
+      id="weight-converter"
+      className="converter-wrapper"
+    >
       <h2 className="heading">Конвертер ваги</h2>
       <div className="converter">
         <input
